@@ -6,7 +6,7 @@ const blogRoutes = require('./routes/blog');
 
 const app = express();
 
-
+// BodyParser
 app.use(bodyParser.json());
 
 app.get('/', (req ,res) =>{

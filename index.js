@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Middleware to parse json bodies
 app.use(express.json());
-app.use('/blog', blogRoutes);
+app.use('/api', blogRoutes);
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
